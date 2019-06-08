@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
 	<menu>
-		<add id="Angel::top_level" module="Angel_Core" resource="Angel_Core::angel" sortOrder="30" title="Angel"/>
+		<add id="Angel::top_level" module="Angel_Core" resource="Angel_Core::angel" sortOrder="30" title="Vgiss Gaming"/>
 		<add action="angel_core/dashboard/index" id="Angel_Core::dashboard" module="Angel_Core" parent="Angel::top_level" resource="Angel_Core::dashboard" sortOrder="10" title="Dashboard"/>
 	</menu>
 </config>
