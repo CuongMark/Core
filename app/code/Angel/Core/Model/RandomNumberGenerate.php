@@ -54,10 +54,10 @@ class RandomNumberGenerate
      * @throws \Exception
      */
     public static function getRandomNumber($start, $end, &$existed){
-        $number = random_int($start, $end);
+        $number = self::getWinningNumber($start, $end);
         /** To make sure the winning numbers are not duplicated */
         while (in_array($number, $existed)){
-            $number = random_int($start, $end);
+            $number = self::getWinningNumber($start, $end);
         }
         $existed[] = $number;
         return $number;
