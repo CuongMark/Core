@@ -1,0 +1,9 @@
+<?php /** @var \Angel\Core\Block\Customer\Account $block */ ?>
+<fieldset class="fieldset vgiss_nick_name" data-container="vgiss_nick_name">
+    <div class="field password current">
+        <label class="label" for="vgiss_nick_name"><span><?= $block->escapeHtml(__('Nick Name')) ?></span></label>
+        <div class="control">
+            <input type="text" class="input-text" name="vgiss_nick_name" id="vgiss_nick_name" value="<?= $block->getNickName() ?>" autocomplete="off" />
+        </div>
+    </div>
+</fieldset>
