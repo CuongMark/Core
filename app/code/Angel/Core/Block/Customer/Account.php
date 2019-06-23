@@ -32,6 +32,10 @@ class Account extends \Magento\Framework\View\Element\Template
      * @return string|null
      */
     public function getNickName(){
-        return $this->currentCustomer->getCustomer()->getCustomAttribute('vgiss_nick_name')->getValue();
+        $nickname = $this->currentCustomer->getCustomer()->getCustomAttribute('vgiss_nick_name');
+        if ($nickname){
+            return $nickname->getValue();
+        }
+        return '';
     }
 }
